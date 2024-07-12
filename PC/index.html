@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>DREAMED PC</title>
+</head>
+
+<body>
+    <!--BLOQUE CABECERA-->
+    <header>
+        <h2>BUILD YOUR DREAMED PC!</h2>
+    </header>
+    <!--BLOQUE PRINCIPAL DE ELEMENTOS-->
+    <main>
+        <!--BLOQUE DE PRODUCTOS-->
+        <div id="leftSide">
+            <p class="mainTitle">PRODUCTS</p>
+            <div id="mainContainer">
+                <!--PROCESADORES-->
+                <div class="container">
+                    <p class="title">CPU</p>
+                    <div class="draggableRow">
+                        <div class="draggableItem">
+                            <a href="https://www.pccomponentes.com/amd-ryzen-7-5800x-38ghz" target="_blank">
+                                <img id="product00" class="product" title="AMD Ryzen 7 5800X 3.8GHz (179€)"
+                                    src="./img/cpu/cpu1.jpg" alt="product"></a>
+                            <p>179€</p>
+                        </div>
+                        <div class="draggableItem">
+                            <a href="https://www.pccomponentes.com/intel-core-i7-14700k-34-56ghz-box" target="_blank">
+                                <img id="product01" class="product" title="Intel Core i7-14700K 5.6GHz (429€)"
+                                    src="./img/cpu/cpu2.jpg" alt="product" draggable="true"></a>
+                            <p>429€</p>
+                        </div>
+                        <div class="draggableItem">
+                            <a href="https://www.pccomponentes.com/amd-ryzen-7-7800x3d-42-ghz-5-ghz" target="_blank">
+                                <img id="product02" class="product" title="AMD Ryzen 7 7800X3D 4.2 GHz (354€)"
+                                    src="./img/cpu/cpu3.jpg" alt="product" draggable="true"></a>
+                            <p>354€</p>
+                        </div>
+                    </div>
+                </div>
+                <!--MEMORIAS-->
+                <div class="container">
+                    <p class="title">MEMORY</p>
+                    <div class="draggableRow">
+                        <div class="draggableItem" draggable="true">
+                            <a href="https://www.pccomponentes.com/kingston-fury-beast-ddr4-3200-mhz-16gb-2x8gb-cl16"
+                                target="_blank">
+                                <img id="product03" class="product" title="Kingston FURY Beast DDR4 3200 MHz 16GB (39€)"
+                                    src="./img/memory/mem1.jpg" alt="product"></a>
+                            <p>39€</p>
+                        </div>
+                        <div class="draggableItem">
+                            <a href="https://www.pccomponentes.com/corsair-vengeance-lpx-ddr4-3600mhz-pc4-28800-32gb-2x16gb-cl18"
+                                target="_blank"><img id="product04" class="product"
+                                    title="Corsair Vengeance LPX DDR4 3600MHz PC4-28800 32GB (72€)"
+                                    src="./img/memory/mem2.jpg" alt="product" draggable="true"></a>
+                            <p>72€</p>
+                        </div>
+                        <div class="draggableItem">
+                            <a href="https://www.pccomponentes.com/corsair-vengeance-rgb-pro-ddr4-3200-pc4-25600-32gb-2x16gb-cl16"
+                                target="_blank"><img id="product05" class="product"
+                                    title="Corsair Vengeance RGB Pro DDR4 3200 PC4-25600 32GB (92€)"
+                                    src="./img/memory/mem3.jpg" alt="product" draggable="true"></a>
+                            <p>92€</p>
+                        </div>
+                    </div>
+                </div>
+                <!--TARJETAS GRÁFICAS-->
+                <div class="container">
+                    <p class="title">GRAPHIC CARD</p>
+                    <div class="draggableRow">
+                        <div class="draggableItem">
+                            <a href="https://www.pccomponentes.com/msi-geforce-rtx-3060-ventus-2x-oc-lhr-12gb-gddr6?refurbished"
+                                target="_blank"><img id="product06" class="product"
+                                    title="MSI GeForce RTX 3060 VENTUS (272€)" src="./img/graphic/card1.jpg"
+                                    alt="product" draggable="true"></a>
+                            <p>272€</p>
+                        </div>
+                        <div class="draggableItem">
+                            <a href="https://www.pccomponentes.com/zotac-gaming-geforce-rtx-3060-twin-edge-lhr-12gb-gddr6"
+                                target="_blank"><img id="product07" class="product"
+                                    title="Zotac Gaming GeForce RTX 3060 (290€)" src="./img/graphic/card2.jpg"
+                                    alt="product" draggable="true"></a>
+                            <p>290€</p>
+                        </div>
+                        <div class="draggableItem">
+                            <a href="https://www.pccomponentes.com/msi-geforce-rtx-4080-super-ventus-3x-oc-16gb-gddr6x-dlss3"
+                                target="_blank"><img id="product08" class="product"
+                                    title="MSI GeForce RTX 4080 SUPER VENTUS 3X (1050€)" src="./img/graphic/card3.jpg"
+                                    alt="product" draggable="true"></a>
+                            <p>1050€</p>
+                        </div>
+                    </div>
+                </div>
+                <!--MONITORES-->
+                <div class="container">
+                    <p class="title">SCREEN</p>
+                    <div class="draggableRow">
+                        <div class="draggableItem">
+                            <a href="https://www.pccomponentes.com/lg-ultragear-24gq50f-b-238-led-fullhd-165hz-freesync-premium"
+                                target="_blank"><img id="product09" class="product"
+                                    title="LG Ultragear 23.8''LED FullHD 165Hz (129€)" src="./img/monitor/screen1.jpg"
+                                    alt="product" draggable="true"></a>
+                            <p>129€</p>
+                        </div>
+                        <div class="draggableItem">
+                            <a href="https://www.pccomponentes.com/msi-g27c4x-27-led-fullhd-250hz-freesync-premium-curvo"
+                                target="_blank"><img id="product10" class="product"
+                                    title="MSI G27C4X 27'' LED FullHD 250Hz Curvo (189€)"
+                                    src="./img/monitor/screen2.jpg" alt="product" draggable="true"></a>
+                            <p>189€</p>
+                        </div>
+                        <div class="draggableItem">
+                            <a href="https://www.pccomponentes.com/monitor-aoc-24b3ha2-238-led-ips-fullhd-100hz"
+                                target="_blank"><img id="product11" class="product"
+                                    title="AOC 24B3HA2 23.8'' LED IPS FullHD 100Hz (80€)"
+                                    src="./img/monitor/screen3.jpg" alt="product" draggable="true"></a>
+                            <p>80€</p>
+                        </div>
+                    </div>
+                </div>
+                <!--RATONES-->
+                <div class="container">
+                    <p class="title">MOUSE</p>
+                    <div class="draggableRow">
+                        <div class="draggableItem">
+                            <a href="https://www.pccomponentes.com/tempest-x8-keeper-rgb-raton-gaming-10000-dpi-negro"
+                                target="_blank">
+                                <img id="product12" class="product" title="Tempest X8 Keeper (20€)"
+                                    src="./img/mouse/mouse1.jpg" alt="product" draggable="true"></a>
+                            <p>20€</p>
+
+                        </div>
+                        <div class="draggableItem">
+                            <a href="https://www.pccomponentes.com/forgeon-perdition-rgb-raton-gaming-16000-dpi-negro"
+                                target="_blank"><img id="product13" class="product" title="Forgeon Perdition (26€)"
+                                    src="./img/mouse/mouse2.jpg" alt="product" draggable="true"></a>
+                            <p>26€</p>
+                        </div>
+                        <div class="draggableItem">
+                            <a href="https://www.pccomponentes.com/logitech-g203-lightsync-2nd-gen-raton-gaming-8000dpi-rgb-negro"
+                                target="_blank"><img id="product14" class="product"
+                                    title="Logitech G203 Lightsync (22€)" src="./img/mouse/mouse3.jpg" alt="product"
+                                    draggable="true"></a>
+                            <p>22€</p>
+                        </div>
+                    </div>
+                </div>
+                <!--TECLADOS-->
+                <div class="container">
+                    <p class="title">KEYBOARD</p>
+                    <div class="draggableRow">
+                        <div class="draggableItem">
+                            <a href="https://www.pccomponentes.com/tempest-diablo-teclado-mecanico-gaming-rgb-switch-red"
+                                target="_blank"> <img id="product15" class="product" title="Tempest Diablo (45€)"
+                                    src="./img/keyboard/keyb1.jpg" alt="product" draggable="true"></a>
+                            <p>45€</p>
+                        </div>
+                        <div class="draggableItem">
+                            <a href="https://www.pccomponentes.com/newskill-serike-v2-tkl-teclado-mecanico-gaming-rgb-blanco-newswitch-red"
+                                target="_blank"> <img id="product16" class="product"
+                                    title="Newskill Serike V2 TKL (80€)" src="./img/keyboard/keyb2.jpg" alt="product"
+                                    draggable="true"></a>
+                            <p>80€</p>
+                        </div>
+                        <div class="draggableItem">
+                            <a href="https://www.pccomponentes.com/tempest-k20-beast-teclado-mecanico-gaming-rgb-tkl-negro"
+                                target="_blank"> <img id="product17" class="product" title="Tempest K20 Beast (55€)"
+                                    src="./img/keyboard/keyb3.jpg" alt="product" draggable="true"></a>
+                            <p>55€</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--BLOQUE ZONA DE LA DERECHA-->
+        <div class="rightZone">
+
+            <div id="intro">
+                <p>
+                    Have you ever thought about which elements should have your dreamed pc? Now you can simulate
+                    it!<br>
+                    Hold your mouse over the product to see the info and then... Just try to drag and drop some of these
+                    elements in the shopping cart to see the final price!<br>
+                    (To delete something from CART you must drop the product in the original place).
+                </p>
+            </div>
+            <!--BLOQUE DE CESTA DE LA COMPRA-->
+            <div id="cart">
+                <p>SHOPPING CART</p>
+                <div id="selectedGrid">
+                    <img id="cart0" class="cartProduct" src="./img/product.png" title="" alt="product" draggable="true">
+                    <img id="cart1" class="cartProduct" src="./img/product.png" title="" alt="product" draggable="true">
+                    <img id="cart2" class="cartProduct" src="./img/product.png" title="" alt="product" draggable="true">
+                    <img id="cart3" class="cartProduct" src="./img/product.png" title="" alt="product" draggable="true">
+                    <img id="cart4" class="cartProduct" src="./img/product.png" title="" alt="product" draggable="true">
+                    <img id="cart5" class="cartProduct" src="./img/product.png" title="" alt="product" draggable="true">
+                </div>
+            </div>
+
+            <!--BLOQUE TICKET-->
+            <div id="ticket">
+                <p class="ticketTitle">TICKET</p>
+                <p>Selected products: </p>
+                <div id="ticketList"></div>
+                <div class="total">
+                    <p>Total... <span id="totalPrice">0</span> €</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--BLOQUE CRÉDITOS-->
+    <footer>
+        <p>Project proposed by Mastermind courses (HTML, CSS & JS course), created and designed by Inma Quesada.</p>
+        <p>Info from all products taken from
+            <a href="https://www.pccomponentes.com/" target="_blank">PC Componentes.</a>
+        </p>
+    </footer>
+
+    <!--AÑADIMOS CÓDIGO JS-->
+    <script defer src="app.js"></script>
+</body>
+
+</html>

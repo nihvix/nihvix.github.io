@@ -1,0 +1,189 @@
+/*========================================
+                HOJA DE ESTILO  
+  ========================================*/
+/*====================
+        General  
+  ====================*/
+body {
+  box-sizing: border-box;
+  background-color: rgb(252, 244, 235);
+  font-family: 'Kanit', sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2%;
+}
+
+/*====================
+    Bloque cabecera  
+  ====================*/
+header {
+  background-color: rgb(210, 57, 1);
+  color: whitesmoke;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  padding: 12px;
+}
+
+
+/*====================
+    Bloque componentes  
+  ====================*/
+#leftSide {
+  float: left;
+  background-color: white;
+  border: 2px solid rgb(156, 55, 8);
+  padding: 10px;
+  margin: 20px 20px 20px 20px;
+  width: 40%;
+}
+
+.mainTitle {
+  color: brown;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px 10px 10px 10px;
+}
+
+#mainContainer {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.container {
+  margin: 5% auto 5% auto;
+}
+
+.title {
+  background-color: rgb(210, 57, 1);
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  color: whitesmoke;
+  letter-spacing: 2px;
+  /*border-radius: 45%;*/
+}
+
+.draggableRow {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.draggableRow p {
+  display: flex;
+  justify-content: space-around;
+}
+
+.draggableItem {
+  margin: 5px 4px 0 4px;
+}
+
+.product,
+.cartProduct {
+  width: 55px;
+}
+
+/*====================
+    Bloque derecho  
+  ====================*/
+
+#intro {
+  margin: 20px 1% 2% 2%;
+  text-align: left;
+  font-size: 15px;
+  line-height: 1.1;
+}
+
+.rightZone {
+  position: relative;
+  float: left;
+  width: 40%;
+}
+
+/*====================
+    Bloque carrito  
+  ====================*/
+
+#cart {
+  background-color: white;
+  border: 2px solid rgb(156, 55, 8);
+  padding: 10px;
+  margin: 10px;
+}
+
+#cart p {
+  background-color: rgb(210, 57, 1);
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#selectedGrid {
+  margin: 2%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+/*====================
+    Bloque ticket  
+  ====================*/
+#ticket {
+  background-image: url("../img/ticketpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+  margin: 10px;
+  font-family: 'Kode Mono', sans-serif;
+  font-size: 15px;
+}
+
+#ticket p {
+  padding: 5px;
+}
+
+.ticketTitle {
+  font-size: 20px;
+  font-weight: 900;
+  margin: 10px;
+  letter-spacing: 2px;
+}
+
+.total {
+  font-weight: bold;
+}
+
+#ticketList {
+  padding-left: 20px;
+}
+
+/*====================
+    Bloque créditos  
+  ====================*/
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5% auto 0.5% auto;
+  background-color: rgb(156, 55, 8);
+  color: whitesmoke;
+  line-height: 1.1;
+}
+
+footer p {
+  padding: 0.25% 0 0 2%;
+}
+
+a {
+  color: rgb(255, 217, 0);
+  text-decoration: none;
+}
+
+a:visited {
+  color: aqua;
+}
