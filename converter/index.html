@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Converter</title>
+</head>
+
+<body>
+
+    <main>
+        <h2>~ Currency converter ~</h2>
+        <h4>Enter amount:</h4>
+        <form action="#" id="formEuro">
+            <input type="text" placeholder="EURO (€)" id="euro" />
+            <p>€</p>
+        </form>
+        <h4>Convert to:</h4>
+        <form action="#">
+            <select id="selectCurrency">
+                <option value="0" disabled selected>CURRENCIES</option>
+                <option value="dol">DOLLAR ($)</option>
+                <option value="won">WON (₩)</option>
+                <option value="yen">YEN (¥)</option>
+            </select>
+            <input type="text" value="0" placeholder="" id="output" readonly />
+        </form>
+        <form action="#" id="formButton">
+            <input type="submit" value="CONVERT" id="convert"/>
+            <p id="error"></p>
+        </form>
+    </main>
+    <footer>Project by Inma Quesada</footer>
+    <script defer src="app.js"></script>
+</body>
+
+</html>
