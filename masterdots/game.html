@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styleGame.css">
+    <title>MasterDots Enter</title>
+</head>
+
+<body>
+    <main>
+        <div id="gameContainer">
+            <div id="game">
+                <!-- AQUÍ SE PINTA EL PANEL DE JUEGO AUTOMÁTICAMENTE -->
+            </div>
+            <div id="finishedGame">
+                <button id="newGame">PLAY AGAIN</button>
+            </div>
+            <div id="gameTitle">
+                <p>MASTERDOTS</p>
+            </div>
+        </div>
+        <div id="userContainer">
+            <form id="form" action="game.html">
+                <div class="itemform">
+                    <img src="./img/avatar1.png" width="26" id="avatarImg">
+                    <input type="text" id="nick" value="nick" readonly>
+                </div>
+                <div class="itemform">
+                    <label for="score">SCORE</label>
+                    <input type="text" id="score" value="0" class="inputgame" readonly>
+                </div>
+                <div class="itemform">
+                    <label for="time">TIME LEFT</label>
+                    <input type="text" id="time" value="30" class="inputgame" readonly>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Curso FrontEnd HTML, CSS y JS</p>
+    </footer>
+
+    <!--Código js-->
+    <script defer src="./js/userInfo.js"></script>
+    <script defer src="./js/game.js"></script>
+</body>
+
+</html>
