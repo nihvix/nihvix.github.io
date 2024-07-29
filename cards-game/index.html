@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styleForm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>PKMN GAME</title>
+</head>
+
+<body>
+    <!------------BLOQUE CABECERA------------>
+    <header>
+        <img src="img/logo.jpg" alt="Logo Pikachu">
+    </header>
+
+    <!------------BLOQUE PRINCIPAL------------>
+    <main>
+        <!--BLOQUE DE ERROR-->
+        <div>
+            <p id="error"></p>
+        </div>
+        <!------------BLOQUE FORMULARIO------------>
+        <form action="game.html" id="inputForm">
+            <!--Bloque nombre de usuario -->
+            <div class="itemForm">
+                <label for="nick">Enter your nickname:* </label>
+                <input id="nick_arroba" type="text" name="nick" value="@" readonly>
+                <input id="nick" type="text" name="nick" minlength="2" placeholder="Ash">
+            </div>
+            <!--Bloque dificultad -->
+            <div class="itemForm">
+                <label for="difficulty">Difficulty:* </label>
+                <select name="difficulty" id="difficulty">
+                    <option value="0" disabled selected>--Please select a level--</option>
+                    <option value="1">Easy</option>
+                    <option value="2">Normal</option>
+                    <option value="3">Hard</option>
+                </select>
+            </div>
+            <!-- Bloque tamaño del panel de juego -->
+            <div class="itemForm">
+                <label for="size">Size:* </label>
+                <select name="size" id="size">
+                    <option value="0" disabled selected>--Please select a size--</option>
+                    <option value="3">3x3</option>
+                    <option value="4">4x4</option>
+                    <option value="5">5x5</option>
+                </select>
+            </div>
+            <!--Bloque requerido-->
+            <div class="requiredInput">
+                <p>*Required</p>
+            </div>
+            <!-- Bloque avatares del jugador -->
+            <div class="itemForm">
+                <div id="avatar">
+                    <label for="avatar">Avatar</label>
+                    <div id="mainAvatar">
+                        <img src="./avatarImg/Poké-Ball.png" alt="Avatar Selected" id="avatarImg">
+                    </div>
+                </div>
+                <div id="avatarGrid">
+                    <div class="avatarItem">
+                        <img src="./avatarImg/Poké-Ball.png" class="avatarImgItem" alt="Pokeball_Icon" draggable="true">
+                    </div>
+                    <div class="avatarItem">
+                        <img src="./avatarImg/Malla-Ball.png" class="avatarImgItem" alt="Pokeball_Icon"
+                            draggable="true">
+                    </div>
+                    <div class="avatarItem">
+                        <img src="./avatarImg/Master-Ball.png" class="avatarImgItem" alt="Pokeball_Icon"
+                            draggable="true">
+                    </div>
+                    <div class="avatarItem">
+                        <img src="./avatarImg/Safari-Ball.png" class="avatarImgItem" alt="Pokeball_Icon"
+                            draggable="true">
+                    </div>
+                    <div class="avatarItem">
+                        <img src="./avatarImg/Super-Ball.png" class="avatarImgItem" alt="Pokeball_Icon"
+                            draggable="true">
+                    </div>
+                    <div class="avatarItem">
+                        <img src="./avatarImg/Ultra-Ball.png" class="avatarImgItem" alt="Pokeball_Icon"
+                            draggable="true">
+                    </div>
+                </div>
+            </div>
+            <!-- Bloque envío -->
+            <div class="itemForm">
+                <div class="itemform">
+                    <input type="submit" value="PLAY" id="play">
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <!------------BLOQUE PIE DE PÁGINA------------>
+    <footer>
+        <!--Créditos-->
+        <p>Pokemon card game by Inma Quesada</p>
+        <!--Gif marquesina-->
+        <marquee direction="right" scrolldelay="10" scrollamount="10">
+            <img id="gif" alt="" src="./img/pikachu.gif">
+        </marquee>
+    </footer>
+
+    <!------------ENLACE AL JS------------>
+    <script defer src="js/DragDropTouch.js"></script>
+    <script defer src="js/userData.js"></script>
+    <script defer src="js/form.js"></script>
+</body>
+
+</html>

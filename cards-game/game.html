@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styleGame.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>PKMN GAME</title>
+</head>
+
+<body>
+    <main>
+        <div id="gameContainer">
+            <div id="game">
+                <div class="cardsContainer">
+                    <!-- AQUÍ SE PINTA EL PANEL DE JUEGO AUTOMÁTICAMENTE -->
+                    <!--<div class="flipCardContainer">
+                        <div class="flipCard">
+                            <div class="flipCardFront">
+                                <img src="./img/front.jpg">
+                            </div>
+                            <div class="flipCardBack">
+                                <img id="img1" src="./img/image1.png">
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+            <div id="finishedGame">
+                <button id="newGame">PLAY AGAIN</button>
+            </div>
+            <div id="gameTitle">
+                <p>MATCH CARDS!</p>
+            </div>
+        </div>
+        <div id="userContainer">
+            <form id="form" action="game.html">
+                <div class="itemform">
+                    <img src="./avatarImg/Poké-Ball.png" width="26" id="avatarImg">
+                    <input type="text" id="nick" value="nick" readonly>
+                </div>
+                <div class="itemform">
+                    <label for="score">SCORE</label>
+                    <input type="text" id="score" value="0" class="inputgame" readonly>
+                </div>
+                <div class="itemform">
+                    <label for="time">THROWS LEFT</label>
+                    <input type="text" id="throws" value="" class="inputgame" readonly>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!------------BLOQUE PIE DE PÁGINA------------>
+    <footer>
+        <!--Créditos-->
+        <p>Pokemon card game by Inma Quesada</p>
+        <!--Gif marquesina-->
+        <marquee direction="right" scrolldelay="10" scrollamount="10">
+            <img id="gif" alt="" src="./img/pikachu.gif">
+        </marquee>
+    </footer>
+
+    <!------------ENLACE AL JS------------>
+    <script defer src="js/userData.js"></script>
+    <script defer src="js/game.js"></script>
+</body>
+
+</html>
