@@ -1,0 +1,184 @@
+/* ====================
+        GENERAL
+   ==================== */
+body {
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+
+/* ====================
+        MAIN
+   ==================== */
+#mainContainer {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 20px #ffffff, -5px -5px 20px #555555;
+    border-radius: 100%;
+}
+
+#innerContainer {
+    height: 360px;
+    width: 360px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 5px 5px 20px #ffffff, inset -5px -5px 20px #555555;
+    /*inset para borde interno*/
+    border-radius: 100%;
+}
+
+/* ==============================
+                ANALOG
+   ============================== */
+#center {
+    /*---Ajustamos la posición al centro de los bloques del reloj*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    /*Para que esté sobre el resto del contenido*/
+    /*---Estilo del círculo central*/
+    background-color: #222;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    border: 2px solid lightgrey;
+    /*Distinguir las manecillas del centro*/
+}
+
+/*========== HANDS ==========*/
+#secsHand,
+#minsHand,
+#hoursHand {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -100%);
+    transform-origin: bottom;
+    /*Para que todas las agujas mantengan el mismo eje de rotación (parte inferior de la aguja)*/
+    border-radius: 15px;
+    width: 2px;
+    background-color: #222;
+}
+
+/*Superponemos las agujas del reloj con zindex//Clock hands overlap*/
+#secsHand {
+    z-index: 5;
+    height: 170px;
+    background-color: red;
+}
+
+#minsHand {
+    z-index: 3;
+    width: 3px;
+    height: 150px;
+}
+
+#hoursHand {
+    z-index: 2;
+    width: 4px;
+    height: 110px;
+}
+
+/*========== MARKS ==========*/
+#marks div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 15px;
+    width: 4px;
+    background-color: #222;
+    border-radius: 10px;
+    z-index: 4;
+}
+
+#marks div:nth-child(3n) {
+    background-color: darkred;
+    height: 20px;
+}
+
+#marks div:nth-child(1) {
+    transform: rotate(30deg) translateY(-170px) translateX(-4px);
+}
+
+#marks div:nth-child(2) {
+    transform: rotate(60deg) translateY(-167px) translateX(-8px);
+}
+
+#marks div:nth-child(3) {
+    transform: rotate(90deg) translateY(-164px) translateX(-10px);
+}
+
+#marks div:nth-child(4) {
+    transform: rotate(120deg) translateY(-161px) translateX(2px);
+}
+
+#marks div:nth-child(5) {
+    transform: rotate(150deg) translateY(-158px) translateX(4px);
+}
+
+#marks div:nth-child(6) {
+    transform: rotate(180deg) translateY(-155px) translateX(2px);
+}
+
+#marks div:nth-child(7) {
+    transform: rotate(210deg) translateY(-158px) translateX(-4px);
+}
+
+#marks div:nth-child(8) {
+    transform: rotate(240deg) translateY(-163px) translateX(-2px);
+}
+
+#marks div:nth-child(9) {
+    transform: rotate(270deg) translateY(-167px) translateX(10px);
+}
+
+#marks div:nth-child(10) {
+    transform: rotate(300deg) translateY(-170px) translateX(8px);
+}
+
+#marks div:nth-child(11) {
+    transform: rotate(330deg) translateY(-173px) translateX(4px);
+}
+
+#marks div:nth-child(12) {
+    transform: rotate(360deg) translateY(-173px) translateX(-2px);
+}
+
+/* ====================
+        DIGITAL
+   ==================== */
+
+@font-face {
+    font-family: 'Digital-7 Mono';
+    src: url(./Digital7Mono-Yz9J4.ttf) format('truetype');
+}
+
+#timeContainer {
+    /*Establecemos su posición dentro del reloj*/
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translate(-50%, -50%);
+    /*Estilo del bloque*/
+    height: 25px;
+    width: 110px;
+    box-shadow: inset 2px 0px 5px #555555, inset 10px -3px 10px #ffffff;
+    /*Estilo contenido del bloque (texto hora)*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Digital-7 Mono', serif;
+    white-space: nowrap;
+    font-size: 20px;
+    font-weight: 600;
+}
